@@ -1,0 +1,15 @@
+<div *ngIf="employees.length; then isList else noList"></div>
+
+<ng-template #isList>
+  <h2>List of employees</h2>
+  <ol>
+    <li *ngFor="let employee of employees; let id = index">
+      {{ employee.getFullName() }}
+      <a (click)="onDelete(id)">X</a>
+    </li>
+  </ol>
+</ng-template>
+
+<ng-template #noList>
+  <h2>No employees</h2>
+</ng-template>

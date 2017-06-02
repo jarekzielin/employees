@@ -1,0 +1,9 @@
+<h1>Employees</h1>
+
+<app-employees-input
+  (addEmployee)="onAddEmployee($event)"></app-employees-input>
+
+<app-employees-list
+  [employees]="employees"
+  
+  (deleteEmployee)="onDeleteEmployee($event)"></app-employees-list>

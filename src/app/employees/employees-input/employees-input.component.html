@@ -1,0 +1,21 @@
+<form #employeeForm="ngForm" (ngSubmit)="onSubmit()">
+  <fieldset>
+    <legend>New employee:</legend>
+    <div>
+      <label>First name:
+        <input required minlength="2" maxlength="20"
+          name="firstName" [(ngModel)]="employee.firstName">
+      </label>
+    </div>
+    <div>
+      <label>Last name:
+        <input required minlength="2" maxlength="20"
+          name="lastName" [(ngModel)]="employee.lastName">
+      </label>
+    </div>
+    <div>
+      <button type="submit"
+        [disabled]="!employeeForm.form.valid">Add</button>
+    </div>
+  </fieldset>
+</form>

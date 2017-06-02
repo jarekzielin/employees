@@ -1,0 +1,22 @@
+ol {
+  margin: 0;
+  li {
+    height: 30px;
+    line-height: 30px;
+    a {
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      color: rgba(0,0,0,0.2);
+      border-radius: 50%;
+      text-align: center;
+      cursor: pointer;
+      transition: all 0.25s;
+
+      &:hover {
+        color: black;
+        background-color: rgba(255,0,0,0.4);
+      }
+    }
+  } 
+}

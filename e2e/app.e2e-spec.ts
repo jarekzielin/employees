@@ -7,8 +7,8 @@ describe('employee App', () => {
     page = new EmployeePage();
   });
 
-  it('should display message saying app works', () => {
+  it('should display h1 text', () => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('app works!');
+    expect(page.getParagraphText()).toEqual('Employees');
   });
 });
